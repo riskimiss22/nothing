@@ -45,7 +45,7 @@ a {
 }
 
 body::before {
-    content: "\00A9  Rayys | PalingIT";
+    content: "@nothing | panda";
     color: white;
     opacity: .12;
     font-size: 11px;
