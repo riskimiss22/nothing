@@ -177,7 +177,7 @@ opsLclick = 0;
 opsLcheck = 0;
 document.getElementById("bq").addEventListener("click", myCheck);
 
-function myCheck() {
+function myCheck() {  
     if (opsLclick == 1) {
         if (opsLcheck == 1) {
             kalimat.innerHTML = kalimatb.innerHTML;
@@ -200,21 +200,54 @@ function myCheck() {
             ftganti = 3;
             setTimeout(ftmuncul, 300);
         }
+        // if (opsLcheck == 4) {
+        //     kalimat.innerHTML = kalimate.innerHTML;
+
+        //     var love;
+        //     var a = 0;
+
+        //     function setup(){
+        //         love = new Array();
+        //         createCanvas(600, 700);
+        //     }
+
+        //     function draw(){
+        //         background(0);
+        //         translate(width/2, height/2);
+        //         noFill();
+        //         stroke(0);
+        //         beginShape();
+        //         fill(150, 0, 10);
+
+        //         for(var P2Jsi = 0; P2Jsi < love.length; P2Jsi++){
+        //             var v = love[P2Jsi];
+        //             vertex(v.x, v.y);
+        //         }
+
+        //         endshape();
+
+        //         var r = 10;
+        //         var x = r*16*pow*(sin(a),3);
+        //         var y = -r*(13*cos(a)-5*cos(2*a)-2*cos(3*a)-cos(4*a));
+
+        //         love.push(new p5.Vector(x,y));
+        //         a+=0.02;
+        //     }
+
+            // kalimat.innerHTML = kalimate.innerHTML;
+        //     otokal();
+        //     fthilang();
+        //     ftganti = 4;
+        //     setTimeout(ftmuncul, 300);
+        // }
+        // if (opsLcheck == 5) {
+        //     kalimat.innerHTML = kalimatf.innerHTML;
+        //     otokal();
+        //     fthilang();
+        //     ftganti = 5;
+        //     setTimeout(ftmuncul, 300);
+        // }
         if (opsLcheck == 4) {
-            kalimat.innerHTML = kalimate.innerHTML;
-            otokal();
-            fthilang();
-            ftganti = 4;
-            setTimeout(ftmuncul, 300);
-        }
-        if (opsLcheck == 5) {
-            kalimat.innerHTML = kalimatf.innerHTML;
-            otokal();
-            fthilang();
-            ftganti = 5;
-            setTimeout(ftmuncul, 300);
-        }
-        if (opsLcheck == 6) {
             kethalo2();
         }
         opsL.style.opacity = "0";
